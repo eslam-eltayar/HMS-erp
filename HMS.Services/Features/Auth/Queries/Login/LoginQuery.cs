@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace HMS.Application.Features.Auth.Queries
+namespace HMS.Application.Features.Auth.Queries.Login
 {
     public class LoginQuery : IRequest<Result<AuthResponse>>
     {

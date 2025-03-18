@@ -37,11 +37,6 @@ namespace HMS.Domain.Abstractions
         }
 
         public TValue Value => IsSuccess ? _value!
-            : throw new InvalidOperationException("Failure results cannot have value!");
-
-        public OkObjectResult ToProblem()
-        {
-            throw new NotImplementedException();
-        }
+            : throw new InvalidOperationException("Failure results cannot have value!"); 
     }
 }

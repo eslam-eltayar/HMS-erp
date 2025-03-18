@@ -12,5 +12,11 @@ namespace HMS.Domain.Errors
     {
         public static readonly Error InvalidCredentials
             = new("User.InvalidCredentials", "Invalid email/password", StatusCodes.Status401Unauthorized);
+
+        public static readonly Error FailedRegister
+            = new("User.FailedRegister", "InValid Data", StatusCodes.Status400BadRequest);
+
+        public static readonly Error EmailIsExist
+            = new("User.EmailIsExist", "This email has been registered before.", StatusCodes.Status400BadRequest);
     }
 }

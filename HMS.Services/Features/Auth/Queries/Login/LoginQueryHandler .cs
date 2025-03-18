@@ -10,7 +10,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace HMS.Application.Features.Auth.Queries
+namespace HMS.Application.Features.Auth.Queries.Login
 {
     public class LoginQueryHandler(UserManager<ApplicationUser> userManager, IJwtProvider jwtProvider) : IRequestHandler<LoginQuery, Result<AuthResponse>>
     {

@@ -34,6 +34,7 @@ namespace HMS.APIs.Extensions
 
             //services.AddMediatR(cfg => cfg.RegisterServicesFromAssembly(typeof(Program).Assembly));
 
+
             return services;
         }
         private static IServiceCollection AddFluentValidationConfig(this IServiceCollection services)
